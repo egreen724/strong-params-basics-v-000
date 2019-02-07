@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class PostsController < ApplicationController
 	def index
@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
-		binding.pry
+	
 		@post = Post.find(params[:id])
 	end
 
@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 	end
 
 	def update
-		binding.pry
+		
 	  @post = Post.find(params[:id])
 	  @post.update(post_params(:title))
 	  redirect_to post_path(@post)
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		binding.pry
+		
 	  @post = Post.find(params[:id])
 	end
 end
