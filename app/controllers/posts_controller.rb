@@ -37,5 +37,5 @@ class PostsController < ApplicationController
 	  params.require(:post).permit(*args)
 	end
 
-	
+
 end
