@@ -32,7 +32,7 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		binding.pry 
+		binding.pry
 	  @post = Post.find(params[:id])
 	end
 end
